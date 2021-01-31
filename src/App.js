@@ -3,6 +3,8 @@ import Home from './components/Home'
 import Contact from './components/Contact'
 import Portfolio from './components/Portfolio'
 import About from './components/About'
+import {Form} from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import { 
   BrowserRouter as Router,
   Switch,
@@ -15,7 +17,7 @@ import {
 function App() {
   return (
     <Router>
-      <div>
+      <div className="body">
         <nav>
           <ul>
             <li>
@@ -32,8 +34,7 @@ function App() {
             </li>
           </ul>
         </nav>
-
-
+        
         <Switch>
           <Route path="/about">
             <About />
