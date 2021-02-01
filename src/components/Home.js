@@ -110,9 +110,9 @@ function Home() {
                  <h6>Website</h6>
                  <h1>{project.name}</h1>
                  <p>{project.description}</p>
-                 <img src={project.image}></img>
-                 <Button href={project.deployed}>Launch Site</Button>
-                 <a href={project.github}><img className="mx-auto" src={githubLogo} alt="Github Link"height="40" width="40"/></a>
+                 {/* <img src={project.image}></img> */}
+                 <Button className="projectButton" href={project.deployed}>Launch Site</Button>
+                 <a href={project.github}><img className="mx-auto" style={{color: "white"}} src={githubLogo} alt="Github Link"height="40" width="40"/></a>
              </div>)}
                 {/* <div data-aos="fade-up" data-aos-easing="ease-in-out" className="boxes">1</div>
                 <div data-aos="fade-up" data-aos-easing="ease-in-out" className="boxes">2</div>

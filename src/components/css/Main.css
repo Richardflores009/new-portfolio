@@ -115,6 +115,25 @@
     
   }
 
+  .boxes h6 {
+    font-family: 'Space Mono',sans-serif;
+    color: white;
+}
+
+.boxes h1 {
+    font-family: 'Space Mono',sans-serif;
+    color: white;
+}
+
+.boxes p {
+    font-family: 'Space Mono',sans-serif;
+    color: white;
+}
+
+.boxes .projectButton {
+    font-family: 'Space Mono', sans-serif;
+    color: white;
+  }
 
   /* contact form  */
 
