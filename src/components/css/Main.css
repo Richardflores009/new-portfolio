@@ -160,11 +160,12 @@
 }
 
 .boxes:hover {
-   box-shadow:0px 0px 60px violet;
+   box-shadow:0px 0px 50px  #0db39e;
     -moz-box-shadow: scale(1.1);  /* Firefox */
     -webkit-box-shadow: scale(1.1);  /* Safari and Chrome */
     -o-box-shadow: scale(1.1);  /* Opera */
     vertical-align: middle;
+    transition: 0.5s;
     
   }
 

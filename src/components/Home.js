@@ -108,7 +108,7 @@ function Home() {
              {projects.map(project => 
              <div key={project.id} data-aos="fade-up" data-aos-easing="ease-in-out" className="boxes">
                  <h5>Website</h5>
-                 <h1>{project.name}</h1>
+                 <h1 className="colorFade">{project.name}</h1>
                  <p>{project.description}</p>
                  {/* <img src={project.image}></img> */}
                  <Button  className="projectButton" href={project.deployed}>Launch Site</Button>
