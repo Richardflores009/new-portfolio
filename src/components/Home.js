@@ -5,7 +5,7 @@ import "./css/Main.css"
 import {Form} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import resume from './files/resume.pdf'
-import portrait from './files/resumephoto.png'
+import portrait from './files/resumephoto.jpg'
 
 function Home() {
     useEffect(() => {
