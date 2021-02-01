@@ -104,28 +104,18 @@ function Home() {
             </section>
             {/* project section */}
             <div className="grids">
-             <h1>Projects</h1>
+             <h1 className="projectTitle">Projects</h1>
              {projects.map(project => 
              <div key={project.id} data-aos="fade-up" data-aos-easing="ease-in-out" className="boxes">
-                 <h6>Website</h6>
+                 <h5>Website</h5>
                  <h1>{project.name}</h1>
                  <p>{project.description}</p>
                  {/* <img src={project.image}></img> */}
-                 <Button className="projectButton" href={project.deployed}>Launch Site</Button>
-                 <a href={project.github}><img className="mx-auto" style={{color: "white"}} src={githubLogo} alt="Github Link"height="40" width="40"/></a>
+                 <Button  className="projectButton" href={project.deployed}>Launch Site</Button>
+                 <a href={project.github}><img className="mx-auto"  src={githubLogo} alt="Github Link"height="40" width="40"/></a>
              </div>)}
-                {/* <div data-aos="fade-up" data-aos-easing="ease-in-out" className="boxes">1</div>
-                <div data-aos="fade-up" data-aos-easing="ease-in-out" className="boxes">2</div>
-                <div data-aos="fade-up" data-aos-easing="ease-in-out" className="boxes">3</div>
-                <div data-aos="fade-up" data-aos-easing="ease-in-out" className="boxes">4</div>
-                <div data-aos="fade-up" data-aos-easing="ease-in-out" className="boxes">5</div>
-                <div data-aos="fade-up" data-aos-easing="ease-in-out" className="boxes">6</div>
-                <div data-aos="fade-up" data-aos-easing="ease-in-out" className="boxes">7</div> */}
             </div>
             {/* contact me */}
-
-
-
 
                 <div className="mainContainer">
                 <div class="container">
