@@ -104,7 +104,7 @@ function Home() {
             </section>
             {/* project section */}
             <div className="grids">
-             <h1 className="projectTitle">Projects</h1>
+             <h1 data-aos="fade-in" className="projectTitle">Projects</h1>
              {projects.map(project => 
              <div key={project.id} data-aos="fade-up" data-aos-easing="ease-in-out" className="boxes">
                  <h5>Website</h5>
