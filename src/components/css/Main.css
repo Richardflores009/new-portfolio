@@ -1,9 +1,12 @@
-
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
 
 /* hero section for auto typing code */
 .hero {
-    padding: 0px 50px 75px;
-    /* grid styles */
+    padding: 0px 10vw 75px;
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr;
@@ -12,7 +15,7 @@
 
 .typer {   
     color: darkgray;
-    font-size: 8vw; 
+    font-size: 7vw; 
     margin: auto 0px;
     max-width: 80vw;
 }
@@ -35,22 +38,39 @@
 }
 
 /* about styles */
+
 .about {
-    padding: 0px 50px 75px;
-    /* grid styles */
+    padding-bottom: 30vh;
     display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: .75fr;
+    grid-template-rows: 1fr;
+    grid-gap: 3px;
+    justify-content: center;
+   
+      
+}
+
+.box {
+    align-content: center;
 }
 .photoContainer {
-    
+   
 }
 
 .photo {
     border-radius: 10px 10px 10px 10px; 
     width: 130px;
-    height: 160px;
+    height: 160px;   
+}
+
+.name {
+    color: white;
+}
+.jobTitle{
+    color: white;
+}
+.aboutMeText{
+    color: white;
 }
 
 /* Project grid styles */
