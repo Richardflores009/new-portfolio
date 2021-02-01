@@ -2,11 +2,12 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "./css/Main.css"
-import {Form} from 'react-bootstrap'
+import {Form,Button} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import resume from './files/resume.pdf'
 import portrait from './files/resumephoto.jpg'
 import projects from './ProjectInfo/projectInfo.json'
+import githubLogo from './ProjectInfo/img/github.png'
 
 function Home() {
     useEffect(() => {
@@ -94,13 +95,25 @@ function Home() {
                 <div className="box">
                     <h6 data-aos="fade-in" className="name">Richard Flores</h6>
                     <h1 data-aos="fade-in" className="jobTitle">Full Stack Developer</h1>
-                    <p data-aos="fade-in" className="aboutMeText">Software Developer , with experience building applications for Front End and Back End projects. His background in managing large scale event production, band management, and many software development proficiencies help him leverage a collabrotive and fast paced approach. Richard is fueled by her passion for understanding the nuances of how software works. He considers himself a forever student, eager to both build on his academic foundations in Back End and Front End development and stay in tune with the latest digital technologies  through continued coursework.</p>
+                    <p data-aos="fade-in" className="aboutMeText">
+                        Software Developer, with experience building applications for Front End and Back End projects.
+                        His background in managing large scale event production, band management, and many software development proficiencies help him leverage a collabrotive and fast paced approach. 
+                        Richard is fueled by her passion for understanding the nuances of how software works. He considers himself a forever student, eager to both build on his academic foundations in Back End and Front End development and stay in tune with the latest digital technologies  through continued coursework.
+                        </p>
                 </div>
             </section>
             {/* project section */}
             <div className="grids">
              <h1>Projects</h1>
-             {projects.map(project => <div key={project.id} data-aos="fade-up" data-aos-easing="ease-in-out" className="boxes"><img src={project.image}></img></div>)}
+             {projects.map(project => 
+             <div key={project.id} data-aos="fade-up" data-aos-easing="ease-in-out" className="boxes">
+                 <h6>Website</h6>
+                 <h1>{project.name}</h1>
+                 <p>{project.description}</p>
+                 <img src={project.image}></img>
+                 <Button href={project.deployed}>Launch Site</Button>
+                 <a href={project.github}><img className="mx-auto" src={githubLogo} alt="Github Link"height="40" width="40"/></a>
+             </div>)}
                 {/* <div data-aos="fade-up" data-aos-easing="ease-in-out" className="boxes">1</div>
                 <div data-aos="fade-up" data-aos-easing="ease-in-out" className="boxes">2</div>
                 <div data-aos="fade-up" data-aos-easing="ease-in-out" className="boxes">3</div>

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 *{
     box-sizing: border-box;
     padding: 0;
@@ -14,8 +15,9 @@
 }   
 
 .typer {   
+    font-family: 'Space Mono',sans-serif;
     color: darkgray;
-    font-size: 7vw; 
+    font-size: 5vw; 
     margin: auto 0px;
     max-width: 80vw;
 }
@@ -44,7 +46,7 @@
     display: grid;
     grid-template-columns: .75fr;
     grid-template-rows: 1fr;
-    grid-gap: 3px;
+    grid-gap: 20px;
     justify-content: center;
    
       
@@ -52,9 +54,7 @@
 
 .box {
     align-content: center;
-}
-.photoContainer {
-   
+    
 }
 
 .photo {
@@ -64,13 +64,22 @@
 }
 
 .name {
+    font-family: 'Space Mono',sans-serif;
+    font-weight: bold;
     color: white;
+    padding: 0px 0px 30px 0px;
 }
 .jobTitle{
+    font-family: 'Space Mono',sans-serif;
+    font-weight: bold;
     color: white;
+    padding: 0px 0px 30px 0px;
 }
 .aboutMeText{
+    font-family: 'Space Mono',sans-serif;
+    font-weight: bold;
     color: white;
+    padding: 0px 0px 40px 0px;
 }
 
 /* Project grid styles */
@@ -84,7 +93,7 @@
     max-height: 60vh;
     box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
     border-radius: 10px 10px 10px 10px;
-    border:1px solid white;
+    border:2.5px solid white;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
 }
@@ -93,3 +102,12 @@
     max-width: 80vw;
     margin: auto;
 }
+
+.boxes:hover {
+   box-shadow:0px 0px 60px violet;
+    -moz-box-shadow: scale(1.1);  /* Firefox */
+    -webkit-box-shadow: scale(1.1);  /* Safari and Chrome */
+    -o-box-shadow: scale(1.1);  /* Opera */
+    vertical-align: middle;
+    
+  }

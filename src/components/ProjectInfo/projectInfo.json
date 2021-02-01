@@ -5,48 +5,55 @@
             "name": "MyHaus",
             "image": "https://raw.githubusercontent.com/Richardflores009/MyHaus/main/public/img/Signup.PNG",
             "github": "https://github.com/Richardflores009/MyHaus",
-            "deployed": "https://my-haus.herokuapp.com"
+            "deployed": "https://my-haus.herokuapp.com",
+            "description": "short but sweet description"
           },
           {
               "id": 2,
               "name": "Munch-A-Movie",
               "image": "https://raw.githubusercontent.com/Richardflores009/Munch-A-Movie/master/assets/img/Screen%20Shot%202020-09-15%20at%2011.42.00.png",
               "github": "https://github.com/Richardflores009/Munch-A-Movie",
-              "deployed": "https://richardflores009.github.io/Munch-A-Movie/"
+              "deployed": "https://richardflores009.github.io/Munch-A-Movie/",
+              "description": "short but sweet description"
             },
             {
               "id": 3,
               "name": "Weather Dashboard",
               "image": "https://raw.githubusercontent.com/Richardflores009/weather-dashboard/master/assets/images/top.png",
               "github": "https://github.com/Richardflores009/weather-dashboard",
-              "deployed": "https://richardflores009.github.io/weather-dashboard/"
+              "deployed": "https://richardflores009.github.io/weather-dashboard/",
+              "description": "short but sweet description"
             },
             {
               "id": 4,
               "name": "Day Scheduler",
               "image": "https://raw.githubusercontent.com/Richardflores009/day-scheduler/develop/assets/Screen%20Shot%202020-08-29%20at%2018.25.00.png",
               "github": "https://github.com/Richardflores009/day-scheduler",
-              "deployed": "https://richardflores009.github.io/day-scheduler/"
+              "deployed": "https://richardflores009.github.io/day-scheduler/",
+              "description": "short but sweet description"
             },
             {
-              "id": 5,
-              "name": "Team Profile Generator",
-              "image": "https://raw.githubusercontent.com/Richardflores009/team-profile-generator/main/img/Screen%20Shot%202020-10-04%20at%2022.17.26.png",
-              "github": "https://github.com/Richardflores009/team-profile-generator",
-              "deployed": "https://github.com/Richardflores009/team-profile-generator"
+                "id": 5,
+                "name": "Team Profile Generator",
+                "image": "https://raw.githubusercontent.com/Richardflores009/team-profile-generator/main/img/Screen%20Shot%202020-10-04%20at%2022.17.26.png",
+                "github": "https://github.com/Richardflores009/team-profile-generator",
+                "deployed": "https://github.com/Richardflores009/team-profile-generator",
+                "description": "short but sweet description"
             },
             {
-              "id": 6,
-              "name": "Day Scheduler",
-              "image": "https://raw.githubusercontent.com/Richardflores009/code-quiz/master/assets/Images/Screen%20Shot%202020-08-23%20at%2018.46.27.png",
-              "github": "https://github.com/Richardflores009/code-quiz",
-              "deployed": "https://richardflores009.github.io/code-quiz/#"
+                "id": 6,
+                "name": "Day Scheduler",
+                "image": "https://raw.githubusercontent.com/Richardflores009/code-quiz/master/assets/Images/Screen%20Shot%202020-08-23%20at%2018.46.27.png",
+                "github": "https://github.com/Richardflores009/code-quiz",
+                "deployed": "https://richardflores009.github.io/code-quiz/#",
+                "description": "short but sweet description"
             },
             {
-              "id": 7,
-              "name": "Mamasita Empañadas",
-              "image": "https://github.com/Richardflores009/my-portfolio/blob/master/src/assets/img/mama.png",
-              "github": "https://github.com/Richardflores009/Mamasita-Empanadas",
-              "deployed": "https://mamasita-empanadas.herokuapp.com/"
+                "id": 7,
+                "name": "Mamasita Empañadas",
+                "image": "https://github.com/Richardflores009/my-portfolio/blob/master/src/assets/img/mama.png",
+                "github": "https://github.com/Richardflores009/Mamasita-Empanadas",
+                "deployed": "https://mamasita-empanadas.herokuapp.com/",
+                "description": "short but sweet description"
             }
     ]
