@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "./css/Main.css"
-import {Form,Button} from 'react-bootstrap'
+import {Form,Button, Col} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import resume from './files/resume.pdf'
 import portrait from './files/resumephoto.jpg'
@@ -123,19 +123,29 @@ function Home() {
                 <div data-aos="fade-up" data-aos-easing="ease-in-out" className="boxes">7</div> */}
             </div>
             {/* contact me */}
-            <div>
-        <Form>
-          <Form.Group controlId="exampleForm.ControlInput1">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="name@example.com" />
-          </Form.Group>
- 
-          <Form.Group controlId="exampleForm.ControlTextarea1">
-            <Form.Label>Example textarea</Form.Label>
-            <Form.Control as="textarea" rows={3} />
-          </Form.Group>
-        </Form>       
-        </div>
+
+
+
+
+                <div className="mainContainer">
+                <div class="container">
+  <form action="action_page.php">
+
+    <label className="contactLabels" for="fname">First Name</label>
+    <input className="contactLabels" type="text" id="fname" name="firstname" placeholder="Full name"/>
+
+    <label className="contactLabels" for="lname">Last Name</label>
+    <input className="contactLabels" type="text" id="lname" name="lastname" placeholder="youremail@email.com"/>
+
+    <label className="contactLabels" for="subject">Subject</label>
+    <textarea className="contactLabels" id="subject" name="subject" placeholder="Hello, I've got a project that I'd like to discuss further..." style={{height:"200px"}}></textarea>
+
+    <input className="contactLabels" type="submit" value="Submit"/>
+
+  </form>
+</div>
+                </div>
+           
         </div>
     )
 }
