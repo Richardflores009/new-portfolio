@@ -8,14 +8,13 @@ import resume from './files/resume.pdf'
 import portrait from './files/resumephoto.jpg'
 import {projects} from './ProjectInfo/projectInfo'
 import githubLogo from './ProjectInfo/img/github.png'
-const laptopPath = './ProjectInfo/img/laptop.png'
+
 
 function Home() {
     useEffect(() => {
         Aos.init({});
     }, []);
     
-    console.log(projects)
     let name = 'Richard Flores'
     // type job description
     var TxtType = function(el, toRotate, period) {
@@ -135,41 +134,29 @@ function Home() {
                      <a href={project.github}><img className="githubLink mx-auto"  src={githubLogo} alt="Github Link"height="40" width="40"/></a>                     
                      </Col>   
                     </Row>  
-                 </Container>
-                 {/* <h5>Website</h5>
-                 <h1 className="colorFade">{project.name}</h1>
-                 <p>{project.description}</p>
-                 <div className="imgContainer">
-                 <img height="180" width="300" src={project.image} alt="Project on a laptop"></img>
-                 </div>
-                 <div className="buttonContainer">
-                 <Button  className="projectButton" href={project.deployed}>Launch Site</Button>
-                 <a href={project.github}><img className="mx-auto"  src={githubLogo} alt="Github Link"height="40" width="40"/></a>
-                 </div>
-                  */}
-                 
+                 </Container>                 
              </div>)}
             </div>
             {/* contact me */}
 
-                <div className="mainContainer">
+            <div className="mainContainer">
                 <div className="container">
-  <form action="action_page.php">
+                    <form action="action_page.php">
 
-    <label className="contactLabels" htmlFor="fname">First Name</label>
-    <input className="contactLabels" type="text" id="fname" name="firstname" placeholder="Full name"/>
+                    <label className="contactLabels" htmlFor="fname">First Name</label>
+                    <input className="contactLabels" type="text" id="fname" name="firstname" placeholder="Full name"/>
 
-    <label className="contactLabels" htmlFor="lname">Last Name</label>
-    <input className="contactLabels" type="text" id="lname" name="lastname" placeholder="youremail@email.com"/>
+                    <label className="contactLabels" htmlFor="lname">Last Name</label>
+                    <input className="contactLabels" type="text" id="lname" name="lastname" placeholder="youremail@email.com"/>
 
-    <label className="contactLabels" htmlFor="subject">Subject</label>
-    <textarea className="contactLabels" id="subject" name="subject" placeholder="Hello, I've got a project that I'd like to discuss further..." style={{height:"200px"}}></textarea>
+                    <label className="contactLabels" htmlFor="subject">Subject</label>
+                    <textarea className="contactLabels" id="subject" name="subject" placeholder="Hello, I've got a project that I'd like to discuss further..." style={{height:"200px"}}></textarea>
 
-    <input className="contactLabels" type="submit" value="Submit"/>
+                    <input className="contactLabels" type="submit" value="Submit"/>
 
-  </form>
-</div>
+                    </form>
                 </div>
+            </div>
            
         </div>
     )
