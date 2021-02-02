@@ -10,14 +10,7 @@ function App() {
   return (
     <Router> 
       <div className="body">
-        {/* {projects.map(projects =>(
-          <Home
-          key={projects.id}
-          image={projects.image}
-          />
-        ))} */}
-        <Home></Home>
-       
+        <Home/>      
       </div>
     </Router>
   );
