@@ -6,13 +6,16 @@ import {Form,Button, Col} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import resume from './files/resume.pdf'
 import portrait from './files/resumephoto.jpg'
-import projects from './ProjectInfo/projectInfo.json'
+import {projects} from './ProjectInfo/projectInfo'
 import githubLogo from './ProjectInfo/img/github.png'
+const laptopPath = './ProjectInfo/img/laptop.png'
 
 function Home() {
     useEffect(() => {
         Aos.init({});
     }, []);
+    
+    console.log(projects)
     let name = 'Richard Flores'
     // type job description
     var TxtType = function(el, toRotate, period) {
@@ -78,7 +81,7 @@ function Home() {
                 <div></div>
                 <div>
                 <h1 className="typer">
-                <div href="" class="typewrite" data-period="500" data-type='["enjoys backend development.", "loves learning new things", "Loves to Develop." ]'>
+                <div href="" className="typewrite" data-period="500" data-type='["enjoys backend development.", "loves learning new things", "Loves to Develop." ]'>
                     <p className="wrap"></p>
                 </div>
                 </h1>                                         
@@ -107,27 +110,27 @@ function Home() {
              <h1 data-aos="fade-in" className="projectTitle">Projects</h1>
              {projects.map(project => 
              <div key={project.id} data-aos="fade-up" data-aos-easing="ease-in-out" className="boxes">
-                 <h5>Website</h5>
-                 <h1 className="colorFade">{project.name}</h1>
-                 <p>{project.description}</p>
-                 {/* <img src={project.image}></img> */}
-                 <Button  className="projectButton" href={project.deployed}>Launch Site</Button>
-                 <a href={project.github}><img className="mx-auto"  src={githubLogo} alt="Github Link"height="40" width="40"/></a>
+                 <h5 className="box a">Website</h5>
+                 <h1 className="box b colorFade">{project.name}</h1>
+                 <p className="box c">{project.description}</p>
+                 <Button  className="box d projectButton" href={project.deployed}>Launch Site</Button>
+                 <a href={project.github}><img className="box e mx-auto"  src={githubLogo} alt="Github Link"height="40" width="40"/></a>
+                 <img className="box f"height="360" width="600" src={project.image} alt="Project on a laptop"></img>
              </div>)}
             </div>
             {/* contact me */}
 
                 <div className="mainContainer">
-                <div class="container">
+                <div className="container">
   <form action="action_page.php">
 
-    <label className="contactLabels" for="fname">First Name</label>
+    <label className="contactLabels" htmlFor="fname">First Name</label>
     <input className="contactLabels" type="text" id="fname" name="firstname" placeholder="Full name"/>
 
-    <label className="contactLabels" for="lname">Last Name</label>
+    <label className="contactLabels" htmlFor="lname">Last Name</label>
     <input className="contactLabels" type="text" id="lname" name="lastname" placeholder="youremail@email.com"/>
 
-    <label className="contactLabels" for="subject">Subject</label>
+    <label className="contactLabels" htmlFor="subject">Subject</label>
     <textarea className="contactLabels" id="subject" name="subject" placeholder="Hello, I've got a project that I'd like to discuss further..." style={{height:"200px"}}></textarea>
 
     <input className="contactLabels" type="submit" value="Submit"/>
