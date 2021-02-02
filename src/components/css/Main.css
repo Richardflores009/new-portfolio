@@ -141,6 +141,7 @@
 }
 
 .boxes{
+    position: relative;
     margin: 20px;
     margin-top: 150px;
     background-color: #191a19;
@@ -153,11 +154,11 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
 }
-
 .grids {
     max-width: 80vw;
     margin: auto;
 }
+
 
 .boxes:hover {
    box-shadow:0px 0px 50px  #0db39e;
@@ -165,23 +166,33 @@
     -webkit-box-shadow: scale(1.1);  /* Safari and Chrome */
     -o-box-shadow: scale(1.1);  /* Opera */
     vertical-align: middle;
-    transition: 0.5s;
-    
-  }
+    transition: 0.5s;    
+}
 
-  .boxes h5 {
+  .boxes h5  {
+    padding: 30px 0px 30px 20px;
+    display: flex;
+    justify-content: flex-start;
     font-family: 'Space Mono',sans-serif;
     color: #d9d9d9;
 }
 
 .boxes h1 {
+    padding: 0px 0px 30px 20px;
+    display: flex;
+    justify-content: flex-start;
     font-family: 'Space Mono',sans-serif;
     color: white;
 }
 
 .boxes p {
+    padding: 0px 0px 30px 20px;
+    display: flex;
+    justify-content: flex-start;
     font-family: 'Space Mono',sans-serif;
     color: white;
+    top: 200px; 
+    left: 90px; 
 }
 
 .boxes .projectButton {
@@ -198,6 +209,20 @@
 .boxes .projectButton:hover {
     background-color: white;
     color:  #191a19;
+}
+
+.githubLink {
+  
+}
+
+.buttonContainer {
+    padding: 0px 0px 30px 20px;
+}
+
+.imgContainer {
+    display: flex;
+    justify-content: flex-end;
+    vertical-align: middle;
 }
   /* contact form  */
 

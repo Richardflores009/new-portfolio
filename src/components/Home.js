@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import "./css/Main.css"
-import {Form,Button, Col} from 'react-bootstrap'
+import {Button, Col, Row, Container} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import resume from './files/resume.pdf'
 import portrait from './files/resumephoto.jpg'
@@ -110,12 +110,44 @@ function Home() {
              <h1 data-aos="fade-in" className="projectTitle">Projects</h1>
              {projects.map(project => 
              <div key={project.id} data-aos="fade-up" data-aos-easing="ease-in-out" className="boxes">
-                 <h5 className="box a">Website</h5>
-                 <h1 className="box b colorFade">{project.name}</h1>
-                 <p className="box c">{project.description}</p>
-                 <Button  className="box d projectButton" href={project.deployed}>Launch Site</Button>
-                 <a href={project.github}><img className="box e mx-auto"  src={githubLogo} alt="Github Link"height="40" width="40"/></a>
-                 <img className="box f"height="360" width="600" src={project.image} alt="Project on a laptop"></img>
+                 <Container>
+                   <Row xs={1} md={1} lg={1}>
+                    <Col>
+                    <h5>Website</h5>
+                    </Col>                       
+                    <Col>
+                    <h1 className="colorFade">{project.name}</h1>
+                    </Col>                                          
+                    </Row>
+                    <Row xs={2} md={2} lg={2}>
+                    <Col>
+                    <p>{project.description}</p>
+                    </Col>    
+                     <Col >
+                     <img height="200" width="320" src={project.image} alt="Project on a laptop"></img> 
+                     </Col>
+                    </Row>  
+                    <Row className="buttonContainer" xs={3} md={true} lg={4}>
+                     <Col >
+                     <Button className="projectButton" href={project.deployed}>Launch Site</Button>
+                     </Col>    
+                     <Col>
+                     <a href={project.github}><img className="githubLink mx-auto"  src={githubLogo} alt="Github Link"height="40" width="40"/></a>                     
+                     </Col>   
+                    </Row>  
+                 </Container>
+                 {/* <h5>Website</h5>
+                 <h1 className="colorFade">{project.name}</h1>
+                 <p>{project.description}</p>
+                 <div className="imgContainer">
+                 <img height="180" width="300" src={project.image} alt="Project on a laptop"></img>
+                 </div>
+                 <div className="buttonContainer">
+                 <Button  className="projectButton" href={project.deployed}>Launch Site</Button>
+                 <a href={project.github}><img className="mx-auto"  src={githubLogo} alt="Github Link"height="40" width="40"/></a>
+                 </div>
+                  */}
+                 
              </div>)}
             </div>
             {/* contact me */}
